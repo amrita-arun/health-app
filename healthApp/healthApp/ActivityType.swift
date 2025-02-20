@@ -1,8 +1,8 @@
-//
-//  ActivityType.swift
-//  healthApp
-//
-//  Created by Ignatius Lau on 2/19/25.
-//
-
 import Foundation
+
+enum ActivityType: String, Codable, CaseIterable {
+    case work
+    case personal
+    case exercise
+    case study
+}

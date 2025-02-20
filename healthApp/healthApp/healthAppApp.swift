@@ -1,10 +1,3 @@
-//
-//  healthAppApp.swift
-//  healthApp
-//
-//  Created by Administrator on 2/19/25.
-//
-
 import SwiftUI
 
 @main

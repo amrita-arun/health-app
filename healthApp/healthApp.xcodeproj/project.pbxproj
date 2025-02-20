@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C9D1C32D66FC170086CF20 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1C22D66FC170086CF20 /* Emotion.swift */; };
+		13C9D1C52D66FC8D0086CF20 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1C42D66FC8D0086CF20 /* Activity.swift */; };
+		13C9D1C72D6700710086CF20 /* EmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1C62D6700710086CF20 /* EmotionView.swift */; };
+		13C9D1C92D6700960086CF20 /* ActivityFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1C82D6700960086CF20 /* ActivityFormView.swift */; };
+		13C9D1CB2D6700BA0086CF20 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1CA2D6700BA0086CF20 /* CalenderView.swift */; };
+		13C9D1D12D6704830086CF20 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1D02D6704830086CF20 /* ActivityType.swift */; };
+		13C9D1D32D6707B50086CF20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1D22D6707B50086CF20 /* ContentView.swift */; };
+		13C9D1D52D6709860086CF20 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1D42D6709860086CF20 /* ActivityViewModel.swift */; };
 		8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9372D66F77C00DD716D /* healthAppApp.swift */; };
-		8472A93A2D66F77C00DD716D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9392D66F77C00DD716D /* ContentView.swift */; };
 		8472A93C2D66F78300DD716D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472A93B2D66F78300DD716D /* Assets.xcassets */; };
 		8472A9402D66F78300DD716D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472A93F2D66F78300DD716D /* Preview Assets.xcassets */; };
 		8472A94A2D66F78300DD716D /* healthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9492D66F78300DD716D /* healthAppTests.swift */; };
@@ -34,9 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C9D1C22D66FC170086CF20 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Emotion.swift; path = healthApp/Emotion.swift; sourceTree = SOURCE_ROOT; };
+		13C9D1C42D66FC8D0086CF20 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = healthApp/Activity.swift; sourceTree = SOURCE_ROOT; };
+		13C9D1C62D6700710086CF20 /* EmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmotionView.swift; path = healthApp/EmotionView.swift; sourceTree = SOURCE_ROOT; };
+		13C9D1C82D6700960086CF20 /* ActivityFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityFormView.swift; path = healthApp/ActivityFormView.swift; sourceTree = SOURCE_ROOT; };
+		13C9D1CA2D6700BA0086CF20 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalenderView.swift; path = healthApp/CalenderView.swift; sourceTree = SOURCE_ROOT; };
+		13C9D1D02D6704830086CF20 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityType.swift; path = healthApp/ActivityType.swift; sourceTree = SOURCE_ROOT; };
+		13C9D1D22D6707B50086CF20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = healthApp/ContentView.swift; sourceTree = SOURCE_ROOT; };
+		13C9D1D42D6709860086CF20 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityViewModel.swift; path = healthApp/ActivityViewModel.swift; sourceTree = SOURCE_ROOT; };
 		8472A9342D66F77C00DD716D /* healthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8472A9372D66F77C00DD716D /* healthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAppApp.swift; sourceTree = "<group>"; };
-		8472A9392D66F77C00DD716D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8472A93B2D66F78300DD716D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8472A93D2D66F78300DD716D /* healthApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = healthApp.entitlements; sourceTree = "<group>"; };
 		8472A93F2D66F78300DD716D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -99,7 +113,6 @@
 				8472A9632D66F83600DD716D /* Model */,
 				8472A9642D66F83D00DD716D /* ViewModel */,
 				8472A9372D66F77C00DD716D /* healthAppApp.swift */,
-				8472A9392D66F77C00DD716D /* ContentView.swift */,
 				8472A93B2D66F78300DD716D /* Assets.xcassets */,
 				8472A93D2D66F78300DD716D /* healthApp.entitlements */,
 				8472A93E2D66F78300DD716D /* Preview Content */,
@@ -135,6 +148,10 @@
 		8472A9622D66F82400DD716D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				13C9D1C62D6700710086CF20 /* EmotionView.swift */,
+				13C9D1C82D6700960086CF20 /* ActivityFormView.swift */,
+				13C9D1CA2D6700BA0086CF20 /* CalenderView.swift */,
+				13C9D1D22D6707B50086CF20 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +159,9 @@
 		8472A9632D66F83600DD716D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				13C9D1C22D66FC170086CF20 /* Emotion.swift */,
+				13C9D1C42D66FC8D0086CF20 /* Activity.swift */,
+				13C9D1D02D6704830086CF20 /* ActivityType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +169,7 @@
 		8472A9642D66F83D00DD716D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				13C9D1D42D6709860086CF20 /* ActivityViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -217,7 +238,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					8472A9332D66F77C00DD716D = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -283,8 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8472A93A2D66F77C00DD716D /* ContentView.swift in Sources */,
+				13C9D1C72D6700710086CF20 /* EmotionView.swift in Sources */,
 				8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */,
+				13C9D1D32D6707B50086CF20 /* ContentView.swift in Sources */,
+				13C9D1CB2D6700BA0086CF20 /* CalenderView.swift in Sources */,
+				13C9D1C92D6700960086CF20 /* ActivityFormView.swift in Sources */,
+				13C9D1C52D66FC8D0086CF20 /* Activity.swift in Sources */,
+				13C9D1D12D6704830086CF20 /* ActivityType.swift in Sources */,
+				13C9D1C32D66FC170086CF20 /* Emotion.swift in Sources */,
+				13C9D1D52D6709860086CF20 /* ActivityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +382,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -412,9 +442,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -438,6 +470,7 @@
 				CODE_SIGN_ENTITLEMENTS = healthApp/healthApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"healthApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -474,6 +507,7 @@
 				CODE_SIGN_ENTITLEMENTS = healthApp/healthApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"healthApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -505,10 +539,10 @@
 		8472A95D2D66F78400DD716D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -527,10 +561,10 @@
 		8472A95E2D66F78400DD716D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -549,9 +583,9 @@
 		8472A9602D66F78400DD716D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -570,9 +604,9 @@
 		8472A9612D66F78400DD716D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
