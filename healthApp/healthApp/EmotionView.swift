@@ -1,5 +1,6 @@
 import SwiftUI
 
+//testing whether I am commiting to the right remote repo
 struct EmotionView: View {
     @ObservedObject var viewModel: ActivityViewModel  // Add this
     @State private var showingActivitySheet = false
