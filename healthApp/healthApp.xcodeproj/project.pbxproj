@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< Updated upstream
 		13C9D1C32D66FC170086CF20 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1C22D66FC170086CF20 /* Emotion.swift */; };
 		13C9D1C52D66FC8D0086CF20 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1C42D66FC8D0086CF20 /* Activity.swift */; };
 		13C9D1C72D6700710086CF20 /* EmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1C62D6700710086CF20 /* EmotionView.swift */; };
@@ -15,6 +16,15 @@
 		13C9D1D12D6704830086CF20 /* ActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1D02D6704830086CF20 /* ActivityType.swift */; };
 		13C9D1D32D6707B50086CF20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1D22D6707B50086CF20 /* ContentView.swift */; };
 		13C9D1D52D6709860086CF20 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C9D1D42D6709860086CF20 /* ActivityViewModel.swift */; };
+=======
+		139F87F62D78D992004F36D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139F87F52D78D992004F36D3 /* MapKit.framework */; };
+		139F87FA2D78DCF7004F36D3 /* ActivityLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F87F92D78DCF7004F36D3 /* ActivityLogView.swift */; };
+		139F87FC2D78DD54004F36D3 /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F87FB2D78DD54004F36D3 /* ActivityListView.swift */; };
+		139F87FE2D78DDAA004F36D3 /* MapLocationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F87FD2D78DDAA004F36D3 /* MapLocationPicker.swift */; };
+		139F88002D78DDD5004F36D3 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F87FF2D78DDD5004F36D3 /* ActivityModel.swift */; };
+		139F88022D78DE38004F36D3 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F88012D78DE38004F36D3 /* ActivityViewModel.swift */; };
+		139F88042D78DE7E004F36D3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F88032D78DE7E004F36D3 /* LocationManager.swift */; };
+>>>>>>> Stashed changes
 		8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9372D66F77C00DD716D /* healthAppApp.swift */; };
 		8472A93C2D66F78300DD716D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472A93B2D66F78300DD716D /* Assets.xcassets */; };
 		8472A9402D66F78300DD716D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472A93F2D66F78300DD716D /* Preview Assets.xcassets */; };
@@ -41,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< Updated upstream
 		13C9D1C22D66FC170086CF20 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Emotion.swift; path = healthApp/Emotion.swift; sourceTree = SOURCE_ROOT; };
 		13C9D1C42D66FC8D0086CF20 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = healthApp/Activity.swift; sourceTree = SOURCE_ROOT; };
 		13C9D1C62D6700710086CF20 /* EmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmotionView.swift; path = healthApp/EmotionView.swift; sourceTree = SOURCE_ROOT; };
@@ -49,6 +60,15 @@
 		13C9D1D02D6704830086CF20 /* ActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityType.swift; path = healthApp/ActivityType.swift; sourceTree = SOURCE_ROOT; };
 		13C9D1D22D6707B50086CF20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = healthApp/ContentView.swift; sourceTree = SOURCE_ROOT; };
 		13C9D1D42D6709860086CF20 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityViewModel.swift; path = healthApp/ActivityViewModel.swift; sourceTree = SOURCE_ROOT; };
+=======
+		139F87F52D78D992004F36D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		139F87F92D78DCF7004F36D3 /* ActivityLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityLogView.swift; path = healthApp/ActivityLogView.swift; sourceTree = SOURCE_ROOT; };
+		139F87FB2D78DD54004F36D3 /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityListView.swift; path = healthApp/ActivityListView.swift; sourceTree = SOURCE_ROOT; };
+		139F87FD2D78DDAA004F36D3 /* MapLocationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapLocationPicker.swift; path = healthApp/MapLocationPicker.swift; sourceTree = SOURCE_ROOT; };
+		139F87FF2D78DDD5004F36D3 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityModel.swift; path = healthApp/ActivityModel.swift; sourceTree = SOURCE_ROOT; };
+		139F88012D78DE38004F36D3 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityViewModel.swift; path = healthApp/ActivityViewModel.swift; sourceTree = SOURCE_ROOT; };
+		139F88032D78DE7E004F36D3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = healthApp/LocationManager.swift; sourceTree = SOURCE_ROOT; };
+>>>>>>> Stashed changes
 		8472A9342D66F77C00DD716D /* healthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8472A9372D66F77C00DD716D /* healthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAppApp.swift; sourceTree = "<group>"; };
 		8472A93B2D66F78300DD716D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139F87F62D78D992004F36D3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +107,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139F87F42D78D992004F36D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				139F87F52D78D992004F36D3 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8472A92B2D66F77C00DD716D = {
 			isa = PBXGroup;
 			children = (
 				8472A9362D66F77C00DD716D /* healthApp */,
 				8472A9482D66F78300DD716D /* healthAppTests */,
 				8472A9522D66F78400DD716D /* healthAppUITests */,
+				139F87F42D78D992004F36D3 /* Frameworks */,
 				8472A9352D66F77C00DD716D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,6 +146,7 @@
 				8472A93B2D66F78300DD716D /* Assets.xcassets */,
 				8472A93D2D66F78300DD716D /* healthApp.entitlements */,
 				8472A93E2D66F78300DD716D /* Preview Content */,
+				139F87FD2D78DDAA004F36D3 /* MapLocationPicker.swift */,
 			);
 			path = healthApp;
 			sourceTree = "<group>";
@@ -148,10 +179,15 @@
 		8472A9622D66F82400DD716D /* View */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				13C9D1C62D6700710086CF20 /* EmotionView.swift */,
 				13C9D1C82D6700960086CF20 /* ActivityFormView.swift */,
 				13C9D1CA2D6700BA0086CF20 /* CalenderView.swift */,
 				13C9D1D22D6707B50086CF20 /* ContentView.swift */,
+=======
+				139F87F92D78DCF7004F36D3 /* ActivityLogView.swift */,
+				139F87FB2D78DD54004F36D3 /* ActivityListView.swift */,
+>>>>>>> Stashed changes
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,9 +195,15 @@
 		8472A9632D66F83600DD716D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				13C9D1C22D66FC170086CF20 /* Emotion.swift */,
 				13C9D1C42D66FC8D0086CF20 /* Activity.swift */,
 				13C9D1D02D6704830086CF20 /* ActivityType.swift */,
+=======
+				139F87FF2D78DDD5004F36D3 /* ActivityModel.swift */,
+				139F88012D78DE38004F36D3 /* ActivityViewModel.swift */,
+				139F88032D78DE7E004F36D3 /* LocationManager.swift */,
+>>>>>>> Stashed changes
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< Updated upstream
 				13C9D1C72D6700710086CF20 /* EmotionView.swift in Sources */,
 				8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */,
 				13C9D1D32D6707B50086CF20 /* ContentView.swift in Sources */,
@@ -313,6 +356,17 @@
 				13C9D1D12D6704830086CF20 /* ActivityType.swift in Sources */,
 				13C9D1C32D66FC170086CF20 /* Emotion.swift in Sources */,
 				13C9D1D52D6709860086CF20 /* ActivityViewModel.swift in Sources */,
+=======
+				8472A93A2D66F77C00DD716D /* ContentView.swift in Sources */,
+				139F87FC2D78DD54004F36D3 /* ActivityListView.swift in Sources */,
+				E1C359082D6BAD2D0056210E /* HapticView.swift in Sources */,
+				139F88022D78DE38004F36D3 /* ActivityViewModel.swift in Sources */,
+				139F87FA2D78DCF7004F36D3 /* ActivityLogView.swift in Sources */,
+				8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */,
+				139F88002D78DDD5004F36D3 /* ActivityModel.swift in Sources */,
+				139F87FE2D78DDAA004F36D3 /* MapLocationPicker.swift in Sources */,
+				139F88042D78DE7E004F36D3 /* LocationManager.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,12 +522,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = healthApp/healthApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"healthApp/Preview Content\"";
+<<<<<<< Updated upstream
+=======
+				DEVELOPMENT_TEAM = "";
+>>>>>>> Stashed changes
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -491,11 +551,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amrita.healthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -505,12 +567,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = healthApp/healthApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"healthApp/Preview Content\"";
+<<<<<<< Updated upstream
+=======
+				DEVELOPMENT_TEAM = RZVHK5WCS5;
+>>>>>>> Stashed changes
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -528,11 +596,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amrita.healthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
