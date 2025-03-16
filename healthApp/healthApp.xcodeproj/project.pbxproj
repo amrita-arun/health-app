@@ -14,6 +14,8 @@
 		8472A94A2D66F78300DD716D /* healthAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9492D66F78300DD716D /* healthAppTests.swift */; };
 		8472A9542D66F78400DD716D /* healthAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9532D66F78400DD716D /* healthAppUITests.swift */; };
 		8472A9562D66F78400DD716D /* healthAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9552D66F78400DD716D /* healthAppUITestsLaunchTests.swift */; };
+		84ABAE4F2D78E5AC00DBD461 /* NewTaskForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABAE4E2D78E5AC00DBD461 /* NewTaskForm.swift */; };
+		84ABAE532D78F92100DBD461 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ABAE522D78F92100DBD461 /* ImagePicker.swift */; };
 		E1C359082D6BAD2D0056210E /* HapticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C359072D6BAD2D0056210E /* HapticView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		8472A94F2D66F78400DD716D /* healthAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = healthAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8472A9532D66F78400DD716D /* healthAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAppUITests.swift; sourceTree = "<group>"; };
 		8472A9552D66F78400DD716D /* healthAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84ABAE4E2D78E5AC00DBD461 /* NewTaskForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskForm.swift; sourceTree = "<group>"; };
+		84ABAE522D78F92100DBD461 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E1C359072D6BAD2D0056210E /* HapticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,8 +105,6 @@
 				8472A9632D66F83600DD716D /* Model */,
 				8472A9642D66F83D00DD716D /* ViewModel */,
 				8472A9372D66F77C00DD716D /* healthAppApp.swift */,
-				8472A9392D66F77C00DD716D /* ContentView.swift */,
-				E1C359072D6BAD2D0056210E /* HapticView.swift */,
 				8472A93B2D66F78300DD716D /* Assets.xcassets */,
 				8472A93D2D66F78300DD716D /* healthApp.entitlements */,
 				8472A93E2D66F78300DD716D /* Preview Content */,
@@ -138,6 +140,10 @@
 		8472A9622D66F82400DD716D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E1C359072D6BAD2D0056210E /* HapticView.swift */,
+				8472A9392D66F77C00DD716D /* ContentView.swift */,
+				84ABAE4E2D78E5AC00DBD461 /* NewTaskForm.swift */,
+				84ABAE522D78F92100DBD461 /* ImagePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8472A93A2D66F77C00DD716D /* ContentView.swift in Sources */,
+				84ABAE4F2D78E5AC00DBD461 /* NewTaskForm.swift in Sources */,
+				84ABAE532D78F92100DBD461 /* ImagePicker.swift in Sources */,
 				E1C359082D6BAD2D0056210E /* HapticView.swift in Sources */,
 				8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */,
 			);
@@ -443,7 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"healthApp/Preview Content\"";
-				DEVELOPMENT_TEAM = HMMJ6TVU87;
+				DEVELOPMENT_TEAM = MG9ZM4R9QR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -462,6 +470,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amrita.healthApp;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.amrita.healthApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -480,7 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"healthApp/Preview Content\"";
-				DEVELOPMENT_TEAM = HMMJ6TVU87;
+				DEVELOPMENT_TEAM = MG9ZM4R9QR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -499,6 +508,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.amrita.healthApp;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.amrita.healthApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
