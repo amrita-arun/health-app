@@ -16,6 +16,9 @@ struct NewTaskForm: View {
     /// Used to dismiss the view when task is saved
     @Environment(\.presentationMode) var presentationMode
     
+    /// Optional dismissToRoot handler to close all sheets and return to ContentView
+    var dismissToRoot: (() -> Void)?
+    
     // MARK: - State Variables
     
     /// Title of the task
@@ -260,8 +263,13 @@ struct NewTaskForm: View {
         // Save task with the task store
         taskStore.saveTask(newTask, image: selectedImage)
         
-        // Dismiss the form
-        presentationMode.wrappedValue.dismiss()
+        // If we have a dismissToRoot closure, use it to return to ContentView
+        if let dismissToRoot = dismissToRoot {
+            dismissToRoot()
+        } else {
+            // Otherwise use standard dismissal (for compatibility)
+            presentationMode.wrappedValue.dismiss()
+        }
     }
 }
 

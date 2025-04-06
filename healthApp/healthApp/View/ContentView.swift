@@ -14,14 +14,14 @@ struct ContentView: View {
     /// Tracks the currently displayed year (initialized to current year)
     @State private var currentYear = Calendar.current.component(.year, from: Date())
     
-    /// Controls whether the achievement logging view is displayed
-    @State private var showHapticView = false
-    
-    /// Controls whether the day detail view is displayed
-    @State private var showDayDetail = false
-    
     /// Stores the date when a calendar day is selected
     @State private var selectedDayDate: Date?
+    
+    /// Controls what modal view is currently displayed (if any)
+    @State private var activeSheet: ActiveSheet? = nil
+    
+    /// Stores the difficulty score passed from HapticView
+    @State private var difficultyScore: Int = 0
     
     /// The user's name for personalized greeting
     let userName = "Shruti"
@@ -39,6 +39,21 @@ struct ContentView: View {
     
     /// Device color scheme detection (light/dark mode)
     @Environment(\.colorScheme) var colorScheme
+    
+    /// Define possible sheets that can be presented
+    enum ActiveSheet: Identifiable {
+        case hapticView
+        case newTaskForm
+        case dayDetail
+        
+        var id: Int {
+            switch self {
+            case .hapticView: return 0
+            case .newTaskForm: return 1
+            case .dayDetail: return 2
+            }
+        }
+    }
 
     /// Computed property to determine text color based on color scheme
     private var textColor: Color {
@@ -157,7 +172,7 @@ struct ContentView: View {
                                 .contentShape(Rectangle()) // Make entire area tappable
                                 .onTapGesture {
                                     selectedDayDate = dayDate
-                                    showDayDetail = true
+                                    activeSheet = .dayDetail
                                 }
                             } else {
                                 // Empty space for padding days
@@ -180,7 +195,7 @@ struct ContentView: View {
                 
                 // MARK: Achievement Logging Button
                 Button(action: {
-                    showHapticView = true // Show the achievement logging view
+                    activeSheet = .hapticView // Show the achievement logging view
                 }) {
                     Circle()
                         .fill(colorScheme == .dark ? Color.white : Color.black)
@@ -192,14 +207,32 @@ struct ContentView: View {
                 .padding(.bottom, 20)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .sheet(isPresented: $showHapticView) {
-                HapticView()
+            // Use a single sheet presentation with switch-case logic
+            .sheet(item: $activeSheet) { item in
+                switch item {
+                case .hapticView:
+                    HapticView(dismissAndContinue: { score in
+                        difficultyScore = score
+                        // Directly switch from haptic to new task form
+                        activeSheet = .newTaskForm
+                    })
                     .environmentObject(taskStore)
-            }
-            .sheet(isPresented: $showDayDetail) {
-                if let date = selectedDayDate {
-                    NavigationView {
-                        DayDetailView(date: date, taskStore: taskStore)
+                
+                case .newTaskForm:
+                    NewTaskForm(
+                        difficultyScore: difficultyScore,
+                        dismissToRoot: {
+                            // Clear active sheet to return to ContentView
+                            activeSheet = nil
+                        }
+                    )
+                    .environmentObject(taskStore)
+                
+                case .dayDetail:
+                    if let date = selectedDayDate {
+                        NavigationView {
+                            DayDetailView(date: date, taskStore: taskStore)
+                        }
                     }
                 }
             }

@@ -101,32 +101,11 @@ struct RainbowGradientView: View {
     }
 }
 
-// Continue button component
-struct ContinueButtonView: View {
-    let score: Int
-    
-    var body: some View {
-        VStack {
-            Spacer()
-            
-            NavigationLink(destination: NewTaskForm(difficultyScore: score)) {
-                Text("Continue")
-                    .font(.headline)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.white)
-                    .foregroundColor(.blue)
-                    .cornerRadius(10)
-                    .padding(.horizontal)
-                    .padding(.bottom, 20)
-            }
-        }
-        .transition(.move(edge: .bottom))
-    }
-}
-
 // Main HapticView
 struct HapticView: View {
+    // Callback to dismiss this view and continue to NewTaskForm
+    var dismissAndContinue: (Int) -> Void
+    
     // State
     @EnvironmentObject var taskStore: TaskStore
     @State private var difficultyScore: Int = 0
@@ -139,47 +118,62 @@ struct HapticView: View {
     }
     
     var body: some View {
-        NavigationStack {
-            GeometryReader { geometry in
-                // Color-shifting rainbow gradient background
-                RainbowGradientView(difficulty: normalizedDifficulty)
-                
-                // Add gesture handling
-                Color.clear
-                    .contentShape(Rectangle())
-                    .gesture(
-                        DragGesture(minimumDistance: 0)
-                            .onChanged { value in
-                                let height = geometry.size.height
-                                let position = value.location.y
-                                difficultyScore = max(0, min(100, Int((1 - (position / height)) * 100)))
-                                triggerHapticFeedback(intensity: Float(difficultyScore) / 100)
+        GeometryReader { geometry in
+            // Color-shifting rainbow gradient background
+            RainbowGradientView(difficulty: normalizedDifficulty)
+            
+            // Add gesture handling
+            Color.clear
+                .contentShape(Rectangle())
+                .gesture(
+                    DragGesture(minimumDistance: 0)
+                        .onChanged { value in
+                            let height = geometry.size.height
+                            let position = value.location.y
+                            difficultyScore = max(0, min(100, Int((1 - (position / height)) * 100)))
+                            triggerHapticFeedback(intensity: Float(difficultyScore) / 100)
+                        }
+                        .onEnded { _ in
+                            stopHapticFeedback()
+                            
+                            withAnimation {
+                                showContinueButton = true
                             }
-                            .onEnded { _ in
-                                stopHapticFeedback()
-                                
-                                withAnimation {
-                                    showContinueButton = true
-                                }
-                            }
-                    )
-                
-                // Score display with brighter text
-                Text("Difficulty Score: \(difficultyScore)")
-                                   .font(.largeTitle)
-                                   .foregroundColor(.white.opacity(0.9))
-                                   .shadow(radius: 2) // Add shadow for better visibility against changing background
-                                   .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
-                
-                // Continue button (conditionally)
-                if showContinueButton {
-                    ContinueButtonView(score: difficultyScore)
+                        }
+                )
+            
+            // Score display with brighter text
+            Text("Difficulty Score: \(difficultyScore)")
+                .font(.largeTitle)
+                .foregroundColor(.white.opacity(0.9))
+                .shadow(radius: 2) // Add shadow for better visibility against changing background
+                .position(x: geometry.size.width / 2, y: geometry.size.height / 2)
+            
+            // Continue button (conditionally)
+            if showContinueButton {
+                VStack {
+                    Spacer()
+                    
+                    Button(action: {
+                        // Call the provided callback with the difficulty score
+                        dismissAndContinue(difficultyScore)
+                    }) {
+                        Text("Continue")
+                            .font(.headline)
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.white)
+                            .foregroundColor(.blue)
+                            .cornerRadius(10)
+                            .padding(.horizontal)
+                            .padding(.bottom, 20)
+                    }
                 }
+                .transition(.move(edge: .bottom))
             }
-            .onAppear {
-                prepareHaptics()
-            }
-            .navigationBarHidden(true)
+        }
+        .onAppear {
+            prepareHaptics()
         }
     }
     
@@ -219,7 +213,8 @@ struct HapticView: View {
 // Preview
 struct HapticView_Previews: PreviewProvider {
     static var previews: some View {
-        HapticView()
+        // For preview purposes, provide a dummy closure
+        HapticView(dismissAndContinue: { _ in })
             .environmentObject(TaskStore())
     }
 }
