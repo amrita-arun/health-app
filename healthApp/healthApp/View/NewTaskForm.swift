@@ -59,68 +59,6 @@ struct NewTaskForm: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 25) {
-                // Title field
-                VStack(alignment: .leading) {
-                    Text("Title")
-                        .font(.headline)
-                    TextField("Enter task title", text: $taskTitle)
-                        .padding()
-                        .background(Color.gray.opacity(0.1))
-                        .cornerRadius(8)
-                }
-                
-                // Date field
-                VStack(alignment: .leading) {
-                    Text("Date")
-                        .font(.headline)
-                    DatePicker("", selection: $taskDate, displayedComponents: .date)
-                        .labelsHidden()
-                        .padding()
-                        .background(Color.gray.opacity(0.1))
-                        .cornerRadius(8)
-                }
-                
-                // Location field
-                VStack(alignment: .leading) {
-                    Text("Location (Optional)")
-                        .font(.headline)
-                    TextField("Enter location", text: $taskLocation)
-                        .padding()
-                        .background(Color.gray.opacity(0.1))
-                        .cornerRadius(8)
-                }
-                
-                // Description field
-                VStack(alignment: .leading) {
-                    Text("Description")
-                        .font(.headline)
-                    TextField("Task details", text: $taskName)
-                        .padding()
-                        .background(Color.gray.opacity(0.1))
-                        .cornerRadius(8)
-                }
-                
-                // Difficulty display
-                VStack(alignment: .leading) {
-                    Text("Difficulty")
-                        .font(.headline)
-                    
-                    // Display the passed-in difficulty score
-                    HStack {
-                        Text("\(difficultyScore)")
-                            .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(difficultyColor)
-                        
-                        Text("/ 100")
-                            .foregroundColor(.gray)
-                        
-                        Spacer()
-                    }
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(8)
-                }
-                
                 // Emotional response selection
                 VStack(alignment: .leading) {
                     Text("How you feel:")
@@ -145,6 +83,27 @@ struct NewTaskForm: View {
                     .cornerRadius(8)
                 }
                 
+                // Title field
+                VStack(alignment: .leading) {
+                    Text("Title")
+                        .font(.headline)
+                    TextField("Enter task title", text: $taskTitle)
+                        .padding()
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(8)
+                }
+                
+                
+                // Description field
+                VStack(alignment: .leading) {
+                    Text("Description")
+                        .font(.headline)
+                    TextField("Task details", text: $taskName)
+                        .padding()
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(8)
+                }
+            
                 // Category selection
                 VStack(alignment: .leading) {
                     Text("Category:")
@@ -200,6 +159,28 @@ struct NewTaskForm: View {
                     .onTapGesture {
                         showImagePicker = true
                     }
+                }
+                
+                // Date field
+                VStack(alignment: .leading) {
+                    Text("Date")
+                        .font(.headline)
+                    DatePicker("", selection: $taskDate, displayedComponents: .date)
+                        .labelsHidden()
+                        .padding()
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(8)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                // Location field
+                VStack(alignment: .leading) {
+                    Text("Location (Optional)")
+                        .font(.headline)
+                    TextField("Enter location", text: $taskLocation)
+                        .padding()
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(8)
                 }
                 
                 // Save button
