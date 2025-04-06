@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1306F9A52DA1FE190072F35E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306F9A42DA1FE190072F35E /* Task.swift */; };
+		1306F9A72DA1FF4E0072F35E /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306F9A62DA1FF4E0072F35E /* TaskStore.swift */; };
+		1306F9A92DA1FF8B0072F35E /* DayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1306F9A82DA1FF860072F35E /* DayDetailView.swift */; };
 		8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9372D66F77C00DD716D /* healthAppApp.swift */; };
 		8472A93A2D66F77C00DD716D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472A9392D66F77C00DD716D /* ContentView.swift */; };
 		8472A93C2D66F78300DD716D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8472A93B2D66F78300DD716D /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1306F9A42DA1FE190072F35E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = healthApp/Task.swift; sourceTree = SOURCE_ROOT; };
+		1306F9A62DA1FF4E0072F35E /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TaskStore.swift; path = healthApp/TaskStore.swift; sourceTree = SOURCE_ROOT; };
+		1306F9A82DA1FF860072F35E /* DayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailView.swift; sourceTree = "<group>"; };
 		8472A9342D66F77C00DD716D /* healthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = healthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8472A9372D66F77C00DD716D /* healthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = healthAppApp.swift; sourceTree = "<group>"; };
 		8472A9392D66F77C00DD716D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 		8472A9622D66F82400DD716D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1306F9A82DA1FF860072F35E /* DayDetailView.swift */,
 				E1C359072D6BAD2D0056210E /* HapticView.swift */,
 				8472A9392D66F77C00DD716D /* ContentView.swift */,
 				84ABAE4E2D78E5AC00DBD461 /* NewTaskForm.swift */,
@@ -151,6 +158,8 @@
 		8472A9632D66F83600DD716D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1306F9A42DA1FE190072F35E /* Task.swift */,
+				1306F9A62DA1FF4E0072F35E /* TaskStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -294,9 +303,12 @@
 			files = (
 				8472A93A2D66F77C00DD716D /* ContentView.swift in Sources */,
 				84ABAE4F2D78E5AC00DBD461 /* NewTaskForm.swift in Sources */,
+				1306F9A92DA1FF8B0072F35E /* DayDetailView.swift in Sources */,
 				84ABAE532D78F92100DBD461 /* ImagePicker.swift in Sources */,
 				E1C359082D6BAD2D0056210E /* HapticView.swift in Sources */,
+				1306F9A52DA1FE190072F35E /* Task.swift in Sources */,
 				8472A9382D66F77C00DD716D /* healthAppApp.swift in Sources */,
+				1306F9A72DA1FF4E0072F35E /* TaskStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
